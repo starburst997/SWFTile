@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    
+    <meta title="SWFTY" package="jd.boivin.swfty" version="1.0.0" company="Jean-Denis Boivin" />
+    <app main="Main" path="bin" file="SWFTY" />
+    <window background="#000000" allowHighDPI="true" fps="60" />
+    <window hidden="true" if="cli" />
+    
+    <haxelib name="openfl" />
+    <haxelib name="haxe-zip" />
+    <haxelib name="haxe-file-save" />
+    <haxelib name="format" />
+    <haxelib name="binpacking" />
+    <haxelib name="mcli" />
+    <haxelib name="swfty" />
+    <haxelib name="hxbit" />
+    <haxelib name="tweenxcore" />
+    <haxelib name="tilelayer" />
+
+    <source path="src" />
+    <source path="../../submodules/openfl/scripts" />
+
+    <assets path="../../res" rename="res" type="binary" embed="false" />
+    
+    <haxedef name="gl_stats" if="debug" />
+    <haxedef name="sync" unless="html5" />
+    <haxedef name="trim" />
+    <haxedef name="use_rtti_doc" unless="html5" />
+
+</project>
